@@ -51,6 +51,7 @@ function saveRecipesToStorage(recipes) {
 	// B1. TODO - Complete the functionality as described in this function
 	//            header. It is possible in only a single line, but should
 	//            be no more than a few lines.
+	localStorage.setItem("recipes", JSON.stringify(recipes));
 }
 
 /**
@@ -59,7 +60,7 @@ function saveRecipesToStorage(recipes) {
  */
 function initFormHandler() {
 	// B2. TODO - Get a reference to the <form> element
-	let recipeForm = document.getElementById("new-recipe")
+	let recipeForm = document.getElementById("new-recipe");
 	// B3. TODO - Add an event listener for the 'submit' event, which fires when the
 	//            submit button is clicked
 	document.querySelector('button[type="submit"]').addEventListener("click", function() {
@@ -73,7 +74,7 @@ function initFormHandler() {
 		// B8. TODO - Append this new <recipe-card> to <main>
 		// B9. TODO - Get the recipes array from localStorage, add this new recipe to it, and
 		//            then save the recipes array back to localStorage
-	})
+	});
 	
 	// B10. TODO - Get a reference to the "Clear Local Storage" button
 	// B11. TODO - Add a click event listener to clear local storage button
