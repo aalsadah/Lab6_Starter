@@ -86,6 +86,7 @@ class RecipeCard extends HTMLElement {
     color: #70757A;
     font-size: 12px;
   }`;
+   this.shadowRoot.append(style, article);
 	}
 
 	/**
